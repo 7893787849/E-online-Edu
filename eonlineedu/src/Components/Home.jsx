@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 
 import Main from './Main';
 import DataAnalyst from './DataAnalyst/DataAnalyst';
+import DigitalMarketer from './Digital Marketer/DigitalMarketer';
 
 function Home() {
   const [activeTab, setActiveTab] = useState('tab1');
@@ -68,8 +69,8 @@ function Home() {
             <DataAnalyst />
           </div>
           <div id="tab2" className={`p-4 tab-content bg-white shadow-md rounded-lg ${activeTab === 'tab2' ? '' : 'hidden'}`}>
-            <h2 className="text-2xl font-semibold mb-2 text-blue-700">Tab 2 Content</h2>
-            <p>Phasellus eget euismod libero, nec ullamcorper justo...</p>
+            
+            <DigitalMarketer />
           </div>
           <div id="tab3" className={`p-4 tab-content bg-white shadow-md rounded-lg ${activeTab === 'tab3' ? '' : 'hidden'}`}>
             <h2 className="text-2xl font-semibold mb-2 text-blue-700">Tab 3 Content</h2>

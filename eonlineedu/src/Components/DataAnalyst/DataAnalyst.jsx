@@ -11,14 +11,14 @@ function DataAnalyst() {
         <div className='pt-5'>
             <h1 className='text-xl font-semibold'>Median Salary</h1>
             <div className='pt-5'>
-                 <a className='bg-gray-200 rounded-sm text-start   px-[50%] py-2'>
-                    <span className='-ml-[49%]'>All occupations</span>
+                 <a className='bg-gray-200 rounded-sm    md:px-[20%] px-[10%] py-1'>
+                    <span className='md:-ml-[19%] -ml-[9%] '>All occupations</span>
                      </a>
                      <span className='p-2'>$37,960*</span>
         </div>
         <div className='pt-5 pb-10'>
-                 <a className='bg-blue-600 rounded-sm text-start text-white   px-[70%] py-2'>
-                    <span className='-ml-[69%]'>All occupations</span>
+                 <a className='bg-blue-600 rounded-sm  text-white md:px-[60%]  px-[30%] py-1'>
+                    <span className='md:-ml-[59%] -ml-[29%]'>Data Analyst</span>
                      </a>
                      <span className='p-2'>$90,500**</span>
         </div>
@@ -101,6 +101,37 @@ function DataAnalyst() {
                     </a>
                 </p>
             </div>
+            <div class="p-4 ">
+  <figure class="md:flex max-w-5xl  rounded-xl p-8 md:p-0 ">
+    <img class="w-24 h-24 md:w-48 md:h-48 md:rounded-none rounded-full mx-auto object-cover" src="https://images.unsplash.com/photo-1495716868937-273203d5bb0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w0NzEyNjZ8MHwxfHNlYXJjaHw4fHxsYWR5fGVufDB8MHx8fDE2OTQxNzI4MTV8MA&ixlib=rb-4.0.3&q=80&w=1080" alt="" width="384" height="512" />
+    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+      <blockquote>
+        <p class="text-lg font-medium dark:text-slate-100">
+        "For anyone starting out as a data analyst, this is a great introduction and is very inspiring. 
+        The content was well paced and was accessible to people just starting out.
+         I liked the variety of the assignments present in the program. "
+        </p>
+      </blockquote>
+      <figcaption class="font-medium">
+        <div class="text-sky-500 dark:text-sky-400">
+          Sarah Dayan
+        </div>
+        
+      </figcaption>
+    </div>
+  </figure>
+  <hr  />
+  <div className='pt-10 text-sm'>
+  <p>* Employment, Wages, and Projected Change in Employment by Typical Entry-level 
+    Education : U.S. Bureau of Labor Statistics. 
+    Sept. 2022, www.bls.gov/emp/tables/education-summary.htm. </p>
+    <p>** Median salary and job opening data are sourced from United States Lightcast™ Job Postings Report.
+         Data for job roles relevant to featured programs (7/1/2022 - 6/30/2023)</p>
+         <p>*** Growth rate data is sourced from United States Lightcast™ Job Postings Report. 
+            Data for job roles relevant to featured programs (7/1/2022 - 6/30/2023)</p>
+  </div>
+  
+</div>
 
     </div>
    
