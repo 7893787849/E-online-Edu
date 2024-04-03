@@ -1,9 +1,9 @@
 import React from 'react'
-
+import Navbar from './Navbar'
 function Main() {
   return (
     <div>
-
+<Navbar />
 <section class="sm:mt-6 lg:mt-8 mt-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
 <div
