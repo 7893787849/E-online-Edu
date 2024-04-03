@@ -2,12 +2,14 @@
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Components/Home';
+// import Navbar from './Components/Navbar';
 import Login from './Components/Login/Login';
 import SignUp from './Components/Login/SignUp';
 
 function App() {
   return (
-    <div className="App">
+    <div>
+
       <Router>
         <Routes>
         
