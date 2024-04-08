@@ -8,7 +8,9 @@ import FrontEnd from "./Front-End Developer/FrontEnd";
 import Cybersecurity from "./Cybersecurity/Cybersecurity";
 import UiUx from "./Ui-Ux/UiUx";
 import StartLearning from "./startLearning/StartLearning";
+import ExploreCources from './ExploreOurCources/ExploreCources';
 import Aurora from "../Components/aurora/Aurora";
+import Footer1 from "./footer/Footer1";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -148,9 +150,13 @@ function Home() {
           </p>
         </div>
         </div>
-        <StartLearning />
-        <Aurora />
+       
       </div>
+
+      <StartLearning />
+        <ExploreCources />
+        <Aurora />
+        <Footer1 />
     </>
   );
 }

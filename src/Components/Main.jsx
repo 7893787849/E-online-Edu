@@ -1,6 +1,6 @@
 import React from 'react'
-import Navbar from './Navbar'
-import Marquee from './Marquee/Marquee'
+import Marquee from './Marquee/Marquee';
+
 function Main() {
   return (
     <>
