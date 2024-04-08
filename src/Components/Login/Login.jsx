@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios';
 import { GoogleLogin } from 'react-google-login';
+import Navbar from '../Navbar';
 
 function Login() {
    
@@ -16,7 +17,7 @@ function Login() {
     const handleGoogleSignIn = async () => {
       try {
           // Make a POST request to your server endpoint for Google authentication
-          const response = await axios.post('http://localhost:3000/google-authentication');
+          const response = await axios.post('http://localhost:3000/api/google-authentication');
 
           // Handle success response, e.g., redirect to Google authentication page
           console.log('Google authentication response:', response.data);
@@ -30,7 +31,7 @@ function Login() {
       e.preventDefault();
   
       try {
-        const response = await axios.post('http://localhost:3000/Login', {
+        const response = await axios.post('http://localhost:3000/api/login', {
        
           email,
           password,
@@ -45,7 +46,7 @@ function Login() {
     };
   return (
     <div>
-
+<Navbar />
 <section class="py-4 md:py-8 dark:bg-gray-800">
 
 <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom'; 
+import Navbar from '../Navbar';
 
 function SignUp() {
     const [username, setUsername] = useState('');
@@ -28,9 +29,11 @@ function SignUp() {
         }
     };
   return (
+    <>
+     <Navbar />
     <div className="flex font-poppins items-center justify-center dark:bg-gray-900 min-w-screen min-h-screen">
       <div className="grid gap-8">
-        <div id="back-div" className="bg-gradient-to-r from-blue-500 to-purple-500 rounded-[26px] m-4">
+        <div id="back-div" className=" rounded-lg m-4">
           <div className="border-[20px] border-transparent rounded-[20px] dark:bg-gray-900 bg-white shadow-lg xl:p-10 2xl:p-10 lg:p-10 md:p-10 sm:p-2 m-2">
             <h1 className="pt-8 pb-6 font-bold text-5xl dark:text-gray-400 text-center cursor-default">
               Sign Up
@@ -120,6 +123,9 @@ function SignUp() {
         </div>
       </div>
     </div>
+    </>
+   
+    
   );
 }
 

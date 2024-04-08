@@ -11,14 +11,14 @@ function Cybersecurity() {
         <div className="pt-5">
           <h1 className="text-xl font-semibold">Median Salary</h1>
           <div className="pt-5">
-            <a className="bg-gray-200 rounded-sm text-start   px-[50%] py-2">
-              <span className="-ml-[49%]">All occupations</span>
+            <a className="bg-gray-200 rounded-sm text-start   px-[10%]  md:px-[50%] py-2">
+              <span className="md:-ml-[49%] -ml-[9%] md:text-lg text-sm">All occupations</span>
             </a>
             <span className="p-2">$37,960*</span>
           </div>
           <div className="pt-5 pb-10">
-            <a className="bg-blue-600 rounded-sm text-start text-white   px-[70%] py-2">
-              <span className="-ml-[69%]">All occupations</span>
+            <a className="bg-blue-600 rounded-sm text-start text-white px-[20%]  md:px-[70%] py-2">
+              <span className="md:-ml-[69%] -ml-[19%] md:text-lg text-sm">Cybersecurity</span>
             </a>
             <span className="p-2">$90,500**</span>
           </div>
@@ -146,16 +146,7 @@ function Cybersecurity() {
           </div>
         </div>
 
-        <div class=" text-base font-semibold leading-7  ml-[40%] -mt-24">
-          <p>
-            <a
-              href="#"
-              class="text-sky-500 transition-all duration-300 group-hover:text-white "
-            >
-              Explore all Certificates &rarr;
-            </a>
-          </p>
-        </div>
+       
       </div>
     </>
   );
