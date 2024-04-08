@@ -8,6 +8,7 @@ import FrontEnd from "./Front-End Developer/FrontEnd";
 import Cybersecurity from "./Cybersecurity/Cybersecurity";
 import UiUx from "./Ui-Ux/UiUx";
 import StartLearning from "./startLearning/StartLearning";
+import ExploreCources from './ExploreOurCources/ExploreCources';
 import Aurora from "../Components/aurora/Aurora";
 
 function Home() {
@@ -139,6 +140,7 @@ function Home() {
           </div>
         </div>
         <StartLearning />
+        <ExploreCources />
         <Aurora />
       </div>
     </>
