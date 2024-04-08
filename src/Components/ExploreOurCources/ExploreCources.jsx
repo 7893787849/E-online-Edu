@@ -68,7 +68,7 @@ const ExploreCources = () => {
               <img
                 src={course.image}
                 alt={course.title}
-                className="w-32 h-[85px] rounded-lg"
+                className="md:w-32 h-[85px] rounded-lg w-full "
               />
             </div>
             <div className="flex justify-center items-start flex-col pt-3 font-semibold text-gray-600 text-sm">
