@@ -34,7 +34,7 @@ const ExplorCouces = [
   },
   {
     image:
-      "https://www.syte.ai/wp-content/uploads/2021/10/Glossary-Images-1-24_23-1024x625.jpg",
+      "https://industrywired.com/wp-content/uploads/2021/02/Smart-Tech.jpg",
     title: "Personal Development",
     totle: "425 courses",
   },
@@ -44,12 +44,7 @@ const ExplorCouces = [
     title: "Arts and Humanities",
     totle: "338 courses",
   },
-  {
-    image:
-      "https://cdn.ces.tech/ces/media/articles/2022/october/innovation.jpg",
-    title: "Physical Science and Engineering",
-    totle: "413 courses",
-  },
+
 ];
 
 const ExploreCources = () => {
@@ -68,7 +63,7 @@ const ExploreCources = () => {
               <img
                 src={course.image}
                 alt={course.title}
-                className="md:w-32 h-[85px] rounded-lg w-full "
+                className="md:w-32 h-[85px] rounded-lg w-28 "
               />
             </div>
             <div className="flex justify-center items-start flex-col pt-3 font-semibold text-gray-600 text-sm">
