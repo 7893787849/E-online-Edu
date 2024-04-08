@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 
 import Main from './Main';
 import DataAnalyst from './DataAnalyst/DataAnalyst';
-// import DigitalMarketer from './Digital Marketer/DigitalMarketer';
+import DigitalMarketing from './DigitalMarketing/DigitalMarketing';
+import ItSupport from './Itsupport/ItSupport';
+import FrontEnd from './Front-End Developer/FrontEnd';
+import Cybersecurity from './Cybersecurity/Cybersecurity';
+import UiUx from './Ui-Ux/UiUx';
 
 function Home() {
   const [activeTab, setActiveTab] = useState('tab1');
@@ -70,23 +74,19 @@ function Home() {
           </div>
           <div id="tab2" className={`p-4 tab-content bg-white shadow-md rounded-lg ${activeTab === 'tab2' ? '' : 'hidden'}`}>
             
-            {/* <DigitalMarketer /> */}
+            <DigitalMarketing />
           </div>
           <div id="tab3" className={`p-4 tab-content bg-white shadow-md rounded-lg ${activeTab === 'tab3' ? '' : 'hidden'}`}>
-            <h2 className="text-2xl font-semibold mb-2 text-blue-700">Tab 3 Content</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+           <ItSupport />
           </div>
           <div id="tab4" className={`p-4 tab-content bg-white shadow-md rounded-lg ${activeTab === 'tab4' ? '' : 'hidden'}`}>
-            <h2 className="text-2xl font-semibold mb-2 text-blue-700">Tab 4 Content</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+           <Cybersecurity />
           </div>
           <div id="tab5" className={`p-4 tab-content bg-white shadow-md rounded-lg ${activeTab === 'tab5' ? '' : 'hidden'}`}>
-            <h2 className="text-2xl font-semibold mb-2 text-blue-700">Tab 5 Content</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+          <FrontEnd />
           </div>
           <div id="tab6" className={`p-4 tab-content bg-white shadow-md rounded-lg ${activeTab === 'tab6' ? '' : 'hidden'}`}>
-            <h2 className="text-2xl font-semibold mb-2 text-blue-700">Tab 6 Content</h2>
-            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem...</p>
+           <UiUx />
           </div>
         </div>
       </div>

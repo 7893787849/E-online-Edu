@@ -2,12 +2,12 @@ import React from "react";
 import "tailwindcss/tailwind.css"; // Make sure you import Tailwind CSS
 import "@fortawesome/fontawesome-free/css/all.min.css"; // Import Font Awesome
 
-function DataAnalyst() {
+function FrontEnd() {
   return (
     <>
       <div>
-        <h2 className="text-2xl font-semibold mb-2 text-blue-700">Data Analyst</h2>
-        <p>Collect, organize, and transform data to make informed decisions</p>
+        <h2 className="text-2xl font-semibold mb-2 text-blue-700">Front-End Developer</h2>
+        <p>Design and develop the look, feel, function, and user experience of a website</p>
         <div className="pt-5">
           <h1 className="text-xl font-semibold">Median Salary</h1>
           <div className="pt-5">
@@ -51,7 +51,7 @@ function DataAnalyst() {
                   <span class="dark:text-gray-300 ">Google</span>
                 </div>
                 <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-                  Google Data Analytics
+                  Google Digital Marketer
                 </h4>
                 <div className="mt-1">
                   <span>
@@ -88,7 +88,7 @@ function DataAnalyst() {
                   <span class="dark:text-gray-300 ">IBM</span>
                 </div>
                 <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-                  IBM Data Analytics
+                  IBM Digital Marketer
                 </h4>
                 <div className="mt-1">
                   <span>
@@ -125,7 +125,7 @@ function DataAnalyst() {
                   <span class="dark:text-gray-300 ">IBM</span>
                 </div>
                 <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-                  IBM Data Analytics
+                  IBM Digital Marketer
                 </h4>
                 <div className="mt-1">
                   <span>
@@ -161,4 +161,4 @@ function DataAnalyst() {
   );
 }
 
-export default DataAnalyst;
+export default FrontEnd;
