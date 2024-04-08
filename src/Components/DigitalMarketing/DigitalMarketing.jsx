@@ -2,13 +2,12 @@ import React from "react";
 import "tailwindcss/tailwind.css"; // Make sure you import Tailwind CSS
 import "@fortawesome/fontawesome-free/css/all.min.css"; // Import Font Awesome
 
-function DataAnalyst() {
+function DigitalMarketing() {
   return (
     <>
       <div>
-
-        <h2 className="text-2xl font-semibold mb-2 text-blue-700">Data Analyst</h2>
-        <p>Collect, organize, and transform data to make informed decisions</p>
+        <h2 className="text-2xl font-semibold mb-2 text-blue-700">Digital Marketer</h2>
+        <p>Define and develop digital strategies to deliver business growth through online channels</p>
         <div className="pt-5">
           <h1 className="text-xl font-semibold">Median Salary</h1>
           <div className="pt-5">
@@ -19,9 +18,9 @@ function DataAnalyst() {
           </div>
           <div className="pt-5 pb-10">
             <a className="bg-blue-600 rounded-sm text-start text-white   px-[70%] py-2">
-              <span className="-ml-[68%]">All occupations</span>
+              <span className="-ml-[69%]">All occupations</span>
             </a>
-            <span className="p-2">$90,500**</span>
+            <span className="p-2">$61,300**</span>
           </div>
           <hr />
         </div>
@@ -52,7 +51,7 @@ function DataAnalyst() {
                   <span class="dark:text-gray-300 ">Google</span>
                 </div>
                 <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-                  Google Data Analytics
+                  Google Digital Marketer
                 </h4>
                 <div className="mt-1">
                   <span>
@@ -89,7 +88,7 @@ function DataAnalyst() {
                   <span class="dark:text-gray-300 ">IBM</span>
                 </div>
                 <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-                  IBM Data Analytics
+                  IBM Digital Marketer
                 </h4>
                 <div className="mt-1">
                   <span>
@@ -126,7 +125,7 @@ function DataAnalyst() {
                   <span class="dark:text-gray-300 ">IBM</span>
                 </div>
                 <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-                  IBM Data Analytics
+                  IBM Digital Marketer
                 </h4>
                 <div className="mt-1">
                   <span>
@@ -157,9 +156,9 @@ function DataAnalyst() {
             </a>
           </p>
         </div>
-      </div >
+      </div>
     </>
   );
 }
 
-export default DataAnalyst;
+export default DigitalMarketing;
