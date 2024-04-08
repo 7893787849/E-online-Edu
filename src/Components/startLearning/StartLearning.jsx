@@ -112,12 +112,13 @@ const StartLearning = () => {
   const displayedCourses = showAllCourses ? courses : courses.slice(0, 3);
   return (
     <>
+    
+      <div className=" mt-4 px-16">
       <div class="w-full mt-28  pl-4">
         <span class="text-4xl font-bold text-[#023047]  border-b border-[#023047]">
           Start learning with courses &#8594;
         </span>
       </div>
-      <div className=" mt-4">
         <h1 className="pt-10 text-xl  font-semibold pb-4 pl-4">
           Explore online courses from the world's top companies.
         </h1>

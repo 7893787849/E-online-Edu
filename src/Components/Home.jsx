@@ -10,6 +10,7 @@ import UiUx from "./Ui-Ux/UiUx";
 import StartLearning from "./startLearning/StartLearning";
 import ExploreCources from './ExploreOurCources/ExploreCources';
 import Aurora from "../Components/aurora/Aurora";
+import Footer1 from "./footer/Footer1";
 
 function Home() {
   const [activeTab, setActiveTab] = useState("tab1");
@@ -139,10 +140,13 @@ function Home() {
             <UiUx />
           </div>
         </div>
-        <StartLearning />
+       
+      </div>
+
+      <StartLearning />
         <ExploreCources />
         <Aurora />
-      </div>
+        <Footer1 />
     </>
   );
 }
