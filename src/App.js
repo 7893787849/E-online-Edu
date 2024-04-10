@@ -3,7 +3,7 @@ import Home from "./Components/Home/Home";
 // import Navbar from './Components/Navbar';
 import Login from "./Components/Login/Login";
 import SignUp from "./Components/Login/SignUp";
-import Certificates from "./Components/Professional Certificates/Certificates";
+import Certificates from "./Components/Home/startNewCarrer/Professional Certificates/Certificates";
 
 
 function App() {

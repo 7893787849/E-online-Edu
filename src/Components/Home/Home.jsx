@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Main from "./Main";
+import Marquee from './Marquee/Marquee'
 import DataAnalyst from "../DataAnalyst/DataAnalyst";
 import DigitalMarketing from "../DigitalMarketing/DigitalMarketing";
 import ItSupport from "../Itsupport/ItSupport";
@@ -9,6 +10,7 @@ import Cybersecurity from "../Cybersecurity/Cybersecurity";
 import UiUx from "../Ui-Ux/UiUx";
 import StartLearning from "./startLearning/StartLearning";
 import ExploreCources from './ExploreOurCources/ExploreCources';
+import EductionCarousel from "./eductionCarousel/EductionCarousel";
 import Aurora from "./aurora/Aurora";
 import Footer1 from "./footer/Footer1";
 
@@ -29,6 +31,7 @@ function Home() {
     <>
       <Navbar />
       <Main />
+      <Marquee />
       <div class="w-full mt-28 px-16  ">
         <span class="text-4xl font-bold text-[#023047]  border-b border-[#023047]">
           Start a new career with CodeWithGenius &#8594;
@@ -150,10 +153,12 @@ function Home() {
           </p>
         </div>
         </div>
-       
+     
+        <StartLearning />
+      <EductionCarousel />
       </div>
 
-      <StartLearning />
+     
         <ExploreCources />
         <Aurora />
         <Footer1 />

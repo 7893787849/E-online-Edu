@@ -113,7 +113,7 @@ const StartLearning = () => {
   return (
     <>
     
-      <div className=" mt-4 px-16">
+      <div className=" mt-4">
       <div class="w-full mt-28  pl-4">
         <span class="text-4xl font-bold text-[#023047]  border-b border-[#023047]">
           Start learning with courses &#8594;
