@@ -119,10 +119,10 @@ const StartLearning = () => {
           Start learning with courses &#8594;
         </span>
       </div>
-        <h1 className="pt-10 text-xl  font-semibold pb-4 pl-4">
+        <h1 className="pt-10 text-xl font-semibold pb-4 pl-4">
           Explore online courses from the world's top companies.
         </h1>
-        <div className=" flex items-start justify-start">
+        <div className=" flex items-start justify-start ">
           <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
             {displayedCourses.map((course, index) => (
               <CourseCard key={index} course={course} className="border rounded-lg border-blue-800 shadow-xl "/>
