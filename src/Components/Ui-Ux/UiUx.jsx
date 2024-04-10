@@ -51,7 +51,7 @@ function UiUx() {
                   <span class="dark:text-gray-300 ">Google</span>
                 </div>
                 <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-                  Google Digital Marketer
+                  Google UX Designer
                 </h4>
                 <div className="mt-1">
                   <span>
@@ -88,7 +88,7 @@ function UiUx() {
                   <span class="dark:text-gray-300 ">IBM</span>
                 </div>
                 <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-                  IBM Digital Marketer
+                  IBM UX Designer
                 </h4>
                 <div className="mt-1">
                   <span>
@@ -125,7 +125,7 @@ function UiUx() {
                   <span class="dark:text-gray-300 ">IBM</span>
                 </div>
                 <h4 className="mt-2 font-semibold text-lg leading-tight truncate">
-                  IBM Digital Marketer
+                  IBM UX Designer
                 </h4>
                 <div className="mt-1">
                   <span>

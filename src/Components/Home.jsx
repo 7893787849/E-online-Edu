@@ -142,7 +142,7 @@ function Home() {
           <div class=" text-base font-semibold leading-7 text-center justify-center  ">
           <p>
             <a
-              href="#"
+              href="/Certificates"
               class="text-sky-500  transition-all duration-300 group-hover:text-white "
             >
               Explore all Certificates &rarr;

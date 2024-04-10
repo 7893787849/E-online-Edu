@@ -1,4 +1,5 @@
 import { Fragment } from 'react'
+import React, { useState } from 'react';
 import { Disclosure, Menu } from '@headlessui/react'
 import { FaBars } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
@@ -15,6 +16,20 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
+  const [navigationMenu, setNavigationMenu] = useState(null);
+  const [navigationMenuOpen, setNavigationMenuOpen] = useState(false);
+
+  const toggleNavigationMenu = (menuName) => {
+    if (navigationMenuOpen && navigationMenu === menuName) {
+      // If the menu is already open and corresponds to the clicked menu, close it
+      setNavigationMenuOpen(false);
+      setNavigationMenu(null);
+    } else {
+      // If the menu is closed or corresponds to a different menu, open it
+      setNavigationMenuOpen(true);
+      setNavigationMenu(menuName);
+    }
+  };
   return (
     <Disclosure as="nav" className="bg-[#0077b6] sticky top-0 z-50">
       {({ open }) => (
@@ -61,9 +76,62 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {
                   login ? (
-                    <>
-                    <div className="p-3 w-12 rounded-full bg-blue-400 text-white font-bold text-center">A</div>
-                    </>
+                    <div className="relative inline-block">
+      <button
+        className={`inline-flex items-center justify-center h-14 px-4 py-2 text-sm font-medium transition-colors rounded-md ${
+          navigationMenu === 'getting-started' ? 'border-2 border-black' : ''
+        } ${navigationMenu !== 'getting-started' ? '' : ''}`}
+        onClick={() => toggleNavigationMenu('getting-started')}
+        
+      >
+        <span className='p-3 w-12 rounded-full bg-blue-400 text-white font-bold text-center cursor-pointer'>A</span>
+        <svg
+          className={`relative top-[1px] ml-1 h-5 w-5 ease-out duration-300 ${
+            navigationMenuOpen && navigationMenu === 'getting-started' ? '-rotate-180' : ''
+          }`}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          aria-hidden="true"
+        >
+          <polyline points="6 9 12 15 18 9"></polyline>
+        </svg>
+      </button>
+
+      {/* Dropdown menu */}
+      {navigationMenuOpen && navigationMenu === 'getting-started' && (
+        <div className="absolute z-10 mt-1 w-48 -ml-20 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none">
+          {/* Dropdown menu items */}
+          {/* Replace these links with your actual dropdown menu items */}
+          <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+            My Courses
+          </a>
+          <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+            Profile
+          </a>
+          <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+            Settings
+          </a>
+          <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+            Updates
+          </a>
+          <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+            Accomplishments
+          </a>
+          <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+            Help Center
+          </a>
+          <a href="#" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+            Logout
+          </a>
+        </div>
+      )}
+    </div>
+                    
                   ) : (
                     <Menu as="div" className="relative ml-3">
                     <Link to="/login">
